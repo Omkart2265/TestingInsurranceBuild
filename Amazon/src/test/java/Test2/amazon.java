@@ -68,7 +68,7 @@ public class amazon {
 	
 	@AfterTest
 	public void afterTest() {
-		System.out.println("Hulk - The bruce banner");
+		System.out.println("Hulkkkk - The bruce banner");
 	}
 //	
 //	@AfterSuite 
