@@ -58,7 +58,7 @@ public class amazon {
 	
 	@AfterMethod
 	public void afterMethod() {
-		System.out.println("Thor Rangnrok");
+		System.out.println("Thor Love and Thunder");
 	}
 //	
 //	@AfterClass
