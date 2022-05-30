@@ -60,11 +60,11 @@ public class amazon {
 	public void afterMethod() {
 		System.out.println("Thor Love and Thunder");
 	}
-//	
-//	@AfterClass
-//	public void afterClass() {
-//		System.out.println("After Class 33");
-//	}
+	
+	@AfterClass
+	public void afterClass() {
+		System.out.println("Docter Strange multiverse of madness");
+	}
 //	
 //	@AfterTest
 //	public void afterTest() {
