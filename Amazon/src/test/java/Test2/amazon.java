@@ -63,13 +63,13 @@ public class amazon {
 	
 	@AfterClass
 	public void afterClass() {
-		System.out.println("Docter Strange multiverse of madness And WandaVision");
+		System.out.println("Docter  Strange multiverse of madness And WandaVision");
 	}
-//	
-//	@AfterTest
-//	public void afterTest() {
-//		System.out.println("After Test 22 ");
-//	}
+	
+	@AfterTest
+	public void afterTest() {
+		System.out.println("Hulk - The bruce banner");
+	}
 //	
 //	@AfterSuite 
 //	public void afterSuite() {
