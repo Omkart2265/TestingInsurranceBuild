@@ -56,10 +56,10 @@ public class amazon {
 	 
 	}
 	
-//	@AfterMethod
-//	public void afterMethod() {
-//		System.out.println("After Class 44");
-//	}
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("Thor Rangnrok");
+	}
 //	
 //	@AfterClass
 //	public void afterClass() {
