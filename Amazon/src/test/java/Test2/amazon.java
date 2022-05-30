@@ -56,25 +56,25 @@ public class amazon {
 	 
 	}
 	
-	@AfterMethod
-	public void afterMethod() {
-		System.out.println("After Class 44");
-	}
-	
-	@AfterClass
-	public void afterClass() {
-		System.out.println("After Class 33");
-	}
-	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("After Test 22 ");
-	}
-	
-	@AfterSuite 
-	public void afterSuite() {
-		System.out.println("After Suite 11");
-	}
+//	@AfterMethod
+//	public void afterMethod() {
+//		System.out.println("After Class 44");
+//	}
+//	
+//	@AfterClass
+//	public void afterClass() {
+//		System.out.println("After Class 33");
+//	}
+//	
+//	@AfterTest
+//	public void afterTest() {
+//		System.out.println("After Test 22 ");
+//	}
+//	
+//	@AfterSuite 
+//	public void afterSuite() {
+//		System.out.println("After Suite 11");
+//	}
 	
 	
 	
