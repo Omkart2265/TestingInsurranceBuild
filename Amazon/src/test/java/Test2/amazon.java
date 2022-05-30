@@ -63,7 +63,7 @@ public class amazon {
 	
 	@AfterClass
 	public void afterClass() {
-		System.out.println("Docter Strange multiverse of madness");
+		System.out.println("Docter Strange multiverse of madness And WandaVision");
 	}
 //	
 //	@AfterTest
