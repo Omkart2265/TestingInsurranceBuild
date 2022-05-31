@@ -1,0 +1,392 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/5</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 25 01:02:58 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (96 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestClasses.ValidationOfMobileBook.lounchBrowser()'><b>lounchBrowser</b><br>Test class: TestClasses.ValidationOfMobileBook</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1428276217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1428276217'><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>-1653420778</td>
+<td>TestClasses.ValidationOfMobileBook@60d8c9b7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.lounchBrowser()'><b>lounchBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.lounchBrowser()'><b>lounchBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.ValidationOfMobileBook.createPomObjects()'><b>createPomObjects</b><br>Test class: TestClasses.ValidationOfMobileBook</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.ValidationOfMobileBook@60d8c9b7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.createPomObjects()'><b>createPomObjects</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.createPomObjects()'><b>createPomObjects</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.ValidationOfMobileBook.loginTOBrowser()'><b>loginTOBrowser</b><br>Test class: TestClasses.ValidationOfMobileBook</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.ValidationOfMobileBook@60d8c9b7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.loginTOBrowser()'><b>loginTOBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.loginTOBrowser()'><b>loginTOBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.loginTOBrowser()'><b>loginTOBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.loginTOBrowser()'><b>loginTOBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.ValidationOfMobileBook.logout()'><b>logout</b><br>Test class: TestClasses.ValidationOfMobileBook</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.ValidationOfMobileBook@60d8c9b7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.logout()'><b>logout</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.logout()'><b>logout</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.logout()'><b>logout</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.logout()'><b>logout</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.ValidationOfMobileBook.clearObjects()'><b>clearObjects</b><br>Test class: TestClasses.ValidationOfMobileBook</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.ValidationOfMobileBook@60d8c9b7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.clearObjects()'><b>clearObjects</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.clearObjects()'><b>clearObjects</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.ValidationOfMobileBook.closedBrowser()'><b>closedBrowser</b><br>Test class: TestClasses.ValidationOfMobileBook</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.ValidationOfMobileBook@60d8c9b7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.closedBrowser()'><b>closedBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.closedBrowser()'><b>closedBrowser</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td></td>
+<td>-1653420778</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestClasses.ValidationOfMobileBook.testA()'><b>testA</b><br>Test class: TestClasses.ValidationOfMobileBook</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace902874554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace902874554'><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestClasses.ValidationOfMobileBook@60d8c9b7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.testA()'><b>testA</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1051130195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1051130195'><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.testA()'><b>testA</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1885419982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1885419982'><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader.testB()'><b>testB</b><br>Test class: TestClasses.VerifyFlipkartHeader</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1661592564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1661592564'><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestClasses.VerifyFlipkartHeader@48aaecc3</td></tr>
+<tr>
+<td title='TestClasses.VerifyFlipkartHeader2.testB()'><b>testB</b><br>Test class: TestClasses.VerifyFlipkartHeader2</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1126113336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1126113336'><pre>org.testng.TestNGException: 
+Parameter &apos;browserName&apos; is required by BeforeTest on method lounchBrowser but has not been marked @Optional or defined
+in C:\Users\DELL\eclipse-workspace\Flipkart\ParallelTestng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+	at org.testng.TestRunner.run(TestRunner.java:578)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>TestClasses.VerifyFlipkartHeader2@7c0c77c7</td></tr>
+</table><p>
+</body>
+</html>

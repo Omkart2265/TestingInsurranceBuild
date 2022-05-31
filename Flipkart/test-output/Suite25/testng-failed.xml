@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite25]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="TestClasses.VerifyFlipkartHeader">
+        <methods>
+          <include name="loginTOBrowser"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="logout"/>
+          <include name="testA"/>
+          <include name="lounchBrowser"/>
+          <include name="testB"/>
+          <include name="createPomObjects"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyFlipkartHeader -->
+      <class name="TestClasses.ValidationOfMobileBook">
+        <methods>
+          <include name="createPomObjects"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="logout"/>
+          <include name="testA"/>
+          <include name="lounchBrowser"/>
+          <include name="loginTOBrowser"/>
+        </methods>
+      </class> <!-- TestClasses.ValidationOfMobileBook -->
+      <class name="TestClasses.VerifyFlipkartHeader2">
+        <methods>
+          <include name="loginTOBrowser"/>
+          <include name="lounchBrowser"/>
+          <include name="logout"/>
+          <include name="testB"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="testA"/>
+          <include name="createPomObjects"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyFlipkartHeader2 -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="TestClasses.VerifyFlipkartHeader">
+        <methods>
+          <include name="loginTOBrowser"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="logout"/>
+          <include name="testA"/>
+          <include name="lounchBrowser"/>
+          <include name="testB"/>
+          <include name="createPomObjects"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyFlipkartHeader -->
+      <class name="TestClasses.ValidationOfMobileBook">
+        <methods>
+          <include name="createPomObjects"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="logout"/>
+          <include name="testA"/>
+          <include name="lounchBrowser"/>
+          <include name="loginTOBrowser"/>
+        </methods>
+      </class> <!-- TestClasses.ValidationOfMobileBook -->
+      <class name="TestClasses.VerifyFlipkartHeader2">
+        <methods>
+          <include name="loginTOBrowser"/>
+          <include name="lounchBrowser"/>
+          <include name="logout"/>
+          <include name="testB"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="testA"/>
+          <include name="createPomObjects"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyFlipkartHeader2 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="TestClasses.VerifyFlipkartHeader">
+        <methods>
+          <include name="loginTOBrowser"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="logout"/>
+          <include name="testA"/>
+          <include name="lounchBrowser"/>
+          <include name="testB"/>
+          <include name="createPomObjects"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyFlipkartHeader -->
+      <class name="TestClasses.ValidationOfMobileBook">
+        <methods>
+          <include name="createPomObjects"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="logout"/>
+          <include name="testA"/>
+          <include name="lounchBrowser"/>
+          <include name="loginTOBrowser"/>
+        </methods>
+      </class> <!-- TestClasses.ValidationOfMobileBook -->
+      <class name="TestClasses.VerifyFlipkartHeader2">
+        <methods>
+          <include name="loginTOBrowser"/>
+          <include name="lounchBrowser"/>
+          <include name="logout"/>
+          <include name="testB"/>
+          <include name="closedBrowser"/>
+          <include name="clearObjects"/>
+          <include name="testA"/>
+          <include name="createPomObjects"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyFlipkartHeader2 -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite25] -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-25T10:39:14 IST" name="Failed suite [Failed suite [Suite]]" finished-at="2022-05-25T10:39:23 IST" duration-ms="8973">
+    <groups>
+    </groups>
+    <test started-at="2022-05-25T10:39:14 IST" name="ChromeTest(failed)(failed)" finished-at="2022-05-25T10:39:23 IST" duration-ms="8973">
+      <class name="TestClasses.ValidationOfHomaPage2">
+        <test-method is-config="true" signature="lounchBrowser(java.lang.String)[pri:0, instance:TestClasses.ValidationOfHomaPage2@7c0c77c7]" started-at="2022-05-25T10:39:14 IST" name="lounchBrowser" finished-at="2022-05-25T10:39:16 IST" duration-ms="1711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lounchBrowser -->
+        <test-method is-config="true" signature="createPomObjects()[pri:0, instance:TestClasses.ValidationOfHomaPage2@7c0c77c7]" started-at="2022-05-25T10:39:16 IST" name="createPomObjects" finished-at="2022-05-25T10:39:17 IST" duration-ms="1357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPomObjects -->
+        <test-method is-config="true" signature="loginprocess()[pri:0, instance:TestClasses.ValidationOfHomaPage2@7c0c77c7]" started-at="2022-05-25T10:39:17 IST" name="loginprocess" finished-at="2022-05-25T10:39:21 IST" duration-ms="4010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginprocess -->
+        <test-method signature="verifyHotelsPageUrl()[pri:0, instance:TestClasses.ValidationOfHomaPage2@7c0c77c7]" started-at="2022-05-25T10:39:21 IST" name="verifyHotelsPageUrl" finished-at="2022-05-25T10:39:22 IST" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHotelsPageUrl -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TestClasses.ValidationOfHomaPage2@7c0c77c7]" started-at="2022-05-25T10:39:22 IST" name="logout" finished-at="2022-05-25T10:39:22 IST" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="clearObjects()[pri:0, instance:TestClasses.ValidationOfHomaPage2@7c0c77c7]" started-at="2022-05-25T10:39:22 IST" name="clearObjects" finished-at="2022-05-25T10:39:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearObjects -->
+        <test-method is-config="true" signature="closedBrowser()[pri:0, instance:TestClasses.ValidationOfHomaPage2@7c0c77c7]" started-at="2022-05-25T10:39:22 IST" name="closedBrowser" finished-at="2022-05-25T10:39:23 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedBrowser -->
+      </class> <!-- TestClasses.ValidationOfHomaPage2 -->
+    </test> <!-- ChromeTest(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Suite]] -->
+</testng-results>
