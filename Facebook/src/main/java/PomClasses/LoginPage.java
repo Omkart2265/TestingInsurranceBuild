@@ -43,7 +43,7 @@ public class LoginPage
 	}
 	
 	public void forgotPassword() {
-		ForgotPassword.click() ;
+		ForgotPassword.click();
 	}
 	
 	public void createNewAccount() {
