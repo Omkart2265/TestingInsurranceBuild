@@ -66,10 +66,10 @@ public class amazon {
 		System.out.println("Docter  Strange multiverse of madness And WandaVision");
 	}
 	
-	@AfterTest
-	public void afterTest() {
-		System.out.println("Hulkkkk - The bruce banner");
-	}
+//	@AfterTest
+//	public void afterTest() {
+//		System.out.println("Hulkkkk - The bruce banner");
+//	}
 //	
 //	@AfterSuite 
 //	public void afterSuite() {
