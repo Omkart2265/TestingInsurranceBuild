@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2">
+
+  <test  name="ChromeTest">
+<parameter name = "browserName" value = "Chrome"/>
+    <classes>
+      <class name="TestClasses.VerifyFacebookHeader"/>
+       
+    </classes>
+  </test> <!-- regression -->
+
+  <test  name="EdgeTest">
+<parameter name = "browserName" value = "Edge"/>
+    <classes>
+      <class name="TestClasses.VerifyFacebookHeader"/>
+       
+    </classes>
+  </test> <!-- regression -->
+
+
+</suite> <!-- Suite -->
