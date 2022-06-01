@@ -119,12 +119,12 @@ public class VerifyFacebookHeader {
 		loginPage=null;
 	}
 	
-// 	@AfterTest
-// 	public void closedBrowser() {
-// 		driver.close();
-// 		driver = null;
-// 		System.gc();
-// 	}
+ 	@AfterTest
+ 	public void closedBrowser() {
+ 		driver.close();
+ 		driver = null;
+ 		System.gc();
+ 	}
 	
 	
  
