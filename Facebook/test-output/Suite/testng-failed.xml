@@ -4,34 +4,29 @@
   <test thread-count="2" name="ChromeTest(failed)">
     <parameter name="browserName" value="Chrome"/>
     <classes>
-      <class name="TestClasses.VerifyFacebookHeader">
+      <class name="TestClasses.VerifyCreateNewAccountPage">
         <methods>
-          <include name="loginTOBrowser"/>
-          <include name="createPomObjects"/>
-          <include name="lounchBrowser"/>
-          <include name="closedBrowser"/>
-          <include name="clearObjects"/>
-          <include name="testB"/>
+          <include name="testd"/>
           <include name="logout"/>
+          <include name="loginTOBrowser"/>
+          <include name="clearObjects"/>
+          <include name="lounchBrowser"/>
         </methods>
-      </class> <!-- TestClasses.VerifyFacebookHeader -->
+      </class> <!-- TestClasses.VerifyCreateNewAccountPage -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
   <test thread-count="2" name="EdgeTest(failed)">
     <parameter name="browserName" value="Edge"/>
     <classes>
-      <class name="TestClasses.VerifyFacebookHeader">
+      <class name="TestClasses.VerifyCreateNewAccountPage">
         <methods>
-          <include name="loginTOBrowser"/>
-          <include name="createPomObjects"/>
-          <include name="testA"/>
-          <include name="lounchBrowser"/>
-          <include name="closedBrowser"/>
-          <include name="clearObjects"/>
-          <include name="testB"/>
+          <include name="testd"/>
           <include name="logout"/>
+          <include name="loginTOBrowser"/>
+          <include name="clearObjects"/>
+          <include name="lounchBrowser"/>
         </methods>
-      </class> <!-- TestClasses.VerifyFacebookHeader -->
+      </class> <!-- TestClasses.VerifyCreateNewAccountPage -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

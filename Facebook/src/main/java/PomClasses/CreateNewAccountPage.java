@@ -100,11 +100,11 @@ public class CreateNewAccountPage {
 	}
 	
 	public void male() {
-		male.click() ;
+		male.click();
 	}
 	
 	public void female() {
-		Female.click() ;
+		Female.click();
 	}
 	
 	public void custom() {
@@ -125,6 +125,35 @@ public class CreateNewAccountPage {
 	
 	public void cancelButton() {
 		cancelButton.click();
+	}
+	
+	public boolean maleButtonisSelected() {
+		 boolean result = male.isSelected();
+		return result;
+	}
+	
+	public boolean femaleButtonSelected() {
+		boolean result = Female.isSelected();
+		return result;
+		 
+	}
+	
+	public boolean customButtonSelected() {
+		boolean result = custom.isSelected();
+		return result;
+		 
+	}
+	
+	public boolean optionalGenderIsDisplayed() {
+		boolean result = OptionalGender.isDisplayed();
+		return result;
+		 
+	}
+	
+	public boolean signInButtonIsEnabled() {
+		boolean result = signInButton.isEnabled();
+		return result;
+		 
 	}
 
 }

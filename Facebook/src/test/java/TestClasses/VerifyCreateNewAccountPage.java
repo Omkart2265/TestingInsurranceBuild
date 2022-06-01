@@ -40,7 +40,7 @@ public class VerifyCreateNewAccountPage {
 	@BeforeMethod
 	public void loginTOBrowser() throws EncryptedDocumentException, IOException, InterruptedException {
 		driver.get("https://www.facebook.com/");
-		driver.manage().window().maximize();
+	//	driver.manage().window().maximize();
 		Thread.sleep(1000);
 		loginPage.createNewAccount();
 		Thread.sleep(1500);
@@ -58,11 +58,20 @@ public class VerifyCreateNewAccountPage {
 	
 	@Test
 	public void testA() throws InterruptedException {
-	 
-		createNewAccountPage.female();
-		Thread.sleep(3000);
 		
+		createNewAccountPage.female();
+	 
+		 boolean result = createNewAccountPage.femaleButtonSelected();
 		 
+		 if(result)
+		 {
+			 System.out.println("Passed");
+		 }
+		 else
+		 {
+			 System.out.println("failed");
+			 
+		 } 
 	}
 	
 	@Test
@@ -70,6 +79,17 @@ public class VerifyCreateNewAccountPage {
 		
 		createNewAccountPage.male();
 		
+		boolean result = createNewAccountPage.maleButtonisSelected();
+		 
+				if(result)
+				{
+					System.out.println("Passed");
+				}
+				else
+				{
+					System.out.println("failed");
+			 
+				}
 	}
 	
 	@Test
@@ -77,12 +97,37 @@ public class VerifyCreateNewAccountPage {
 		
 		createNewAccountPage.custom();
 		
+		boolean result = createNewAccountPage.customButtonSelected();
+		 
+		if(result)
+		{
+			System.out.println("Passed");
+		}
+		else
+		{
+			System.out.println("failed");
+	 
+		}
+		
 	}
 	
 	@Test
 	public void testd() throws InterruptedException {
-		
+		createNewAccountPage.custom();
+		Thread.sleep(1000);
 		createNewAccountPage.optionalGender();
+		
+		boolean result = createNewAccountPage.optionalGenderIsDisplayed();
+		 
+		if(result)
+		{
+			System.out.println("Passed");
+		}
+		else
+		{
+			System.out.println("failed");
+	 
+		}
 		
 	}
 	
@@ -90,6 +135,18 @@ public class VerifyCreateNewAccountPage {
 	public void teste() throws InterruptedException {
 		
 		createNewAccountPage.signInButton();
+		
+		boolean result = createNewAccountPage.signInButtonIsEnabled();
+		 
+		if(result)
+		{
+			System.out.println("Passed");
+		}
+		else
+		{
+			System.out.println("failed");
+	 
+		}
 		
 	}
 	
