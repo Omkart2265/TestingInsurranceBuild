@@ -39,12 +39,11 @@ public class Utility {
 		
 		 try {
 				data = book.getSheet(sheet).getRow(row).getCell(column).getStringCellValue(); 
-			}
+			 }
 			catch(IllegalStateException e)
 			{
 			double value = book.getSheet(sheet).getRow(row).getCell(column).getNumericCellValue();  
-			int i = (int)value;
-			data = Double.toString(i);
+			data = Double.toString(value);
 			}
 		 
 		 return data;
