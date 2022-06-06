@@ -1,5 +1,6 @@
 package TestClasses;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -11,6 +12,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import PomClasses.ApplicationHeader;
 import PomClasses.CreateNewAccountPage;
@@ -25,11 +30,17 @@ public class VerifyCreateNewAccountPage {
 	LoginPage loginPage;
 	CreateNewAccountPage createNewAccountPage;
 	
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
 	
- 
+	
 	
 	@BeforeClass
 	public void lounchBrowser() {
+		
+		reporter = new ExtentHtmlReporter("test-output"+File.separator+"ExtendReport"+File.separator+"extendReport.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\Automation\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
