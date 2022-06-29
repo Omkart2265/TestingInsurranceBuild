@@ -10,7 +10,7 @@
   <test  name="ChromeTest">
 <parameter name = "browserName" value = "Chrome"/>
     <classes>
-      <class name="TestClasses.VerifyCreateNewAccountPage"/>
+      <class name="TestClasses.VerifyFacebookHeader"/>
        
     </classes>
   </test> <!-- regression -->
@@ -18,7 +18,7 @@
   <test  name="EdgeTest">
 <parameter name = "browserName" value = "Edge"/>
     <classes>
-      <class name="TestClasses.VerifyCreateNewAccountPage"/>
+      <class name="TestClasses.VerifyFacebookHeader"/>
        
     </classes>
   </test> <!-- regression -->

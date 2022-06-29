@@ -23,7 +23,7 @@ public class Utility {
 		String d1 = new SimpleDateFormat("yyyy_mm_dd__hh_mm_ss").format(new Date());
 		File dest = new File("test-output\\screenshot\\Test-"+testID+d1+"jpeg");
 		FileHandler.copy(source, dest);
-		Thread.sleep(1000);
+		 
 	}
 	
 	public static String getDataFromExcelsheet(String sheet ,int row,int column) throws EncryptedDocumentException, IOException 
@@ -44,8 +44,7 @@ public class Utility {
 			catch(IllegalStateException e)
 			{
 			double value = book.getSheet(sheet).getRow(row).getCell(column).getNumericCellValue();  
-			int i = (int)value;
-			data = Double.toString(i);
+			data = Double.toString(value);
 			}
 		 
 		 return data;
